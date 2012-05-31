@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0 (Sun Microsystems Inc.)
+Main-Class: com.jps.pics.tagger.Launcher
+Class-Path: .\lib\metadata-extractor-2.3.1.jar .\lib\log4j-1.2.15.jar
