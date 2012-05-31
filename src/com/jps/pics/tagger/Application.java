@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.eclipse.swt.SWT;
@@ -104,7 +106,15 @@ public class Application {
 				logger.debug("file : " + fileName);
 
 				// exif datas
-				//exifLabel.setText(readExifDatas(fileName));
+				StringBuffer datas = new StringBuffer();
+				Map<String, String> exifDatas = extractExifDatas(fileName);
+				for(Iterator<String> i = exifDatas.keySet().iterator(); i.hasNext();) {
+					String key = i.next();
+					datas.append(key);
+					datas.append(" : ");
+					datas.append(exifDatas.get(key));
+				}
+				exifLabel.setText(datas.toString());
 
 				// pic preview
 				picImage = new Image(display, fileName);
@@ -144,8 +154,11 @@ public class Application {
 		delButton.setText("Supprimer");
 		delButton.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				if(fileList.getFocusIndex() > 0) {
-					fileList.remove(fileList.getFocusIndex());
+				int[] selection = fileList.getSelectionIndices();
+				int offset = 0;
+				for(int i=0; i<selection.length; i++) {
+					fileList.remove(i - offset);
+					offset++;
 				}
 			}
 		});

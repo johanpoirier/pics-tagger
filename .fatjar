@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu May 31 21:12:07 CEST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=pics-tagger_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.jps.pics.tagger.Launcher
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
