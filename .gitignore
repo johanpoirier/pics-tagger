@@ -1,10 +1,9 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
 # Eclipse Files #
 .settings
+.project
+.classpath
+*.log
 classes
+
+# Output files #
+pics-tagger_fat.jar
