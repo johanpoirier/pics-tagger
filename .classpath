@@ -3,8 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.swt"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="lib/metadata-extractor-2.3.1.jar"/>
-	<classpathentry kind="lib" path="lib/ImgrRdr200_RC9.jar"/>
+	<classpathentry kind="lib" path="lib/metadata-extractor-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmpcore.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
