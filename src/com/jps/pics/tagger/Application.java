@@ -339,7 +339,9 @@ public class Application {
 			ExifSubIFDDirectory directory = metadata.getDirectory(ExifSubIFDDirectory.class);
 			if(directory != null) {
 				Date date = directory.getDate(ExifSubIFDDirectory.TAG_DATETIME_ORIGINAL);
-				datas.put("date", formatter.format(date));
+				if(date != null) {
+					datas.put("date", formatter.format(date));
+				}
 			}
 		} catch (JpegProcessingException e) {
 			System.err.println("Problem during datas extraction : " + e.getMessage());
@@ -376,7 +378,7 @@ public class Application {
 
 					// same filename ?
 					int index = 0;
-					File tempFile = new File(newFileName + " (" + index + ").jpg");
+					File tempFile = new File(newFileName + ".jpg");
 					while (tempFile.exists() && !tempFile.getName().equals(pic.getName())) {
 						index++;
 						tempFile = new File(newFileName + " (" + index + ").jpg");
