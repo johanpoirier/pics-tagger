@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>D:\workspace\iLabs\pics-tagger\pics-tagger_fat.jar</jar>
-  <outfile>D:\workspace\iLabs\pics-tagger\pics-tagger.exe</outfile>
+  <jar>G:\workspace\pics-tagger\pics-tagger_fat.jar</jar>
+  <outfile>G:\workspace\pics-tagger\pics-tagger.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir></chdir>
@@ -20,7 +20,7 @@
   <jre>
     <path></path>
     <minVersion>1.5.0</minVersion>
-    <maxVersion>1.6.0</maxVersion>
+    <maxVersion>1.7.0</maxVersion>
     <jdkPreference>preferJre</jdkPreference>
   </jre>
 </launch4jConfig>

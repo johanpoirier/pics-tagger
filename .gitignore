@@ -4,6 +4,7 @@
 .classpath
 *.log
 classes
+bin
 
 # Output files #
 pics-tagger_fat.jar
