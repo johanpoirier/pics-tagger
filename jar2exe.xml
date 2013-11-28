@@ -20,7 +20,7 @@
   <jre>
     <path></path>
     <minVersion>1.5.0</minVersion>
-    <maxVersion>1.7.0</maxVersion>
+    <maxVersion>1.8.0</maxVersion>
     <jdkPreference>preferJre</jdkPreference>
   </jre>
 </launch4jConfig>
