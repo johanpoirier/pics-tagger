@@ -15,7 +15,7 @@
   <icon></icon>
   <singleInstance>
     <mutexName>PicsTagger</mutexName>
-    <windowTitle></windowTitle>
+    <windowTitle>Pics Tagger</windowTitle>
   </singleInstance>
   <jre>
     <path></path>
@@ -23,4 +23,23 @@
     <maxVersion>1.8.0</maxVersion>
     <jdkPreference>preferJre</jdkPreference>
   </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0</txtFileVersion>
+    <fileDescription>Rename pictures with informations from tag within</fileDescription>
+    <copyright>JoPs</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>Pics Tagger</productName>
+    <companyName>JoPs</companyName>
+    <internalName>pics-tagger</internalName>
+    <originalFilename>pics-tagger.exe</originalFilename>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
 </launch4jConfig>
